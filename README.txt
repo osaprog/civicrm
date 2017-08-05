@@ -2,7 +2,7 @@ implementing the CiviCRM Extension: com.task.membership
 
 location: 
 
-sites/default/files/civicrm/ext/sites/default/files/civicrm/ext/com.task.membership
+sites/default/files/civicrm/ext/com.task.membership
 
 
 Modifications in CiviCRM Module:
