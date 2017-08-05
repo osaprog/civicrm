@@ -86,4 +86,10 @@
     <page_callback>CRM_Member_Form_MembershipType</page_callback>
     <access_arguments>access CiviMember,administer CiviCRM</access_arguments>
   </item>
+  <item>
+     <path>civicrm/membership/viewPeriods</path>
+     <title>Memberships Periods</title>
+     <page_callback>CRM_Member_Form_MembershipViewPeriods</page_callback>
+     <weight>392</weight>
+  </item>
 </menu>

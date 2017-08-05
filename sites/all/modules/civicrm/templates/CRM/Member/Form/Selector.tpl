@@ -63,8 +63,16 @@
         {if $row.owner_membership_id}<br />({ts}by relationship{/ts}){/if}
     </td>
     <td class="crm-membership-join_date">{$row.join_date|truncate:10:''|crmDate}</td>
-    <td class="crm-membership-start_date">{$row.membership_start_date|truncate:10:''|crmDate}</td>
-    <td class="crm-membership-end_date">{$row.membership_end_date|truncate:10:''|crmDate}</td>
+    <td class="crm-membership-start_date">
+        <a href="{crmURL p='civicrm/membership/viewPeriods' q="reset=1&cid=`$row.contact_id`&id=`$row.membership_id`&action=viewPeriods&context=membership"}" title="{ts}View Membership Periods{/ts}" class="action-item">
+        {$row.membership_start_date|truncate:10:''|crmDate}
+        </a>
+    </td>
+    <td class="crm-membership-end_date">
+        <a href="{crmURL p='civicrm/membership/viewPeriods' q="reset=1&cid=`$row.contact_id`&id=`$row.membership_id`&action=viewPeriods&context=membership"}" title="{ts}View Membership Periods{/ts}" class="action-item">
+        {$row.membership_end_date|truncate:10:''|crmDate}
+        </a>
+    </td>
     <td class="crm-membership-source">{$row.membership_source}</td>
     <td class="crm-membership-status crm-membership-status_{$row.membership_status}">{$row.membership_status}</td>
     <td class="crm-membership-auto_renew">{if $row.auto_renew}<img src="{$config->resourceBase}i/check.gif" alt="{ts}Auto-renew{/ts}" /> {/if}</td>
