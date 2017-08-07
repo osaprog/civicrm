@@ -18,4 +18,4 @@ Modified:
 all/modules/civicrm/templates/CRM/Member/Form/Selector.tpl
 all/modules/civicrm/CRM/Member/xml/Menu/Member.xml
 
-
+TODO: Move modifications from sites/all/modules/civicrm to sites/default/modules/civicrm
